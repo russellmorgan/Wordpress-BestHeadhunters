@@ -13,7 +13,7 @@
       <!-- if job post show meta about the job -->
       <div class="card mb-5">
         <div class="card-body">
-        Posted on: <?php the_time('n.j.y'); ?><br />
+        Posted on: <?php the_time('F.j.Y'); ?><br />
         Category: <?php echo get_the_category_list(','); ?>
         </div>
       </div>
