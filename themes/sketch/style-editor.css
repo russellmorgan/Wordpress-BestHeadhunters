@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Merriweather'), url('http://themes.googleusercontent.com/static/fonts/merriweather/v4/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+
+.mceContentBody h1, .mceContentBody h2, .mceContentBody h3, .mceContentBody h4, .mceContentBody h5, .mceContentBody h6 {
+    font: 400 18px/26px 'Coda', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0 0 20px 0;
+    color: #5B6169;
+}
+
+.mceContentBody h1 { 
+	font-size: 34px;
+    line-height: 40px;
+}
+
+.mceContentBody h2 { 
+	font-size: 28px;
+	line-height: 32px;
+ }
+
+.mceContentBody h3 { 
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.mceContentBody h4 { 
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.mceContentBody h5 { 
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.mceContentBody h6 { 
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.mceContentBody {
+    color: #848D9B;
+    font: 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.mceContentBody p {
+	
+}
+
+.mceContentBody ul {
+	margin: 0 0 25px 0px;
+}
+
+.mceContentBody li {
+	list-style-type: circle;
+    margin: 0 0 8px 0;
+}
+
+.mceContentBody ol {
+	 margin: 0 0 25px 0px;
+}
+.mceContentBody ol li {
+	list-style-type: decimal;
+}
+
+.intro {
+	font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eee;
+    color: #A7B0BD;
+}
+
+.highlight {
+	background: #fcf8a5;
+	width: auto;
+	display: inline;
+	padding: 2px 3px;
+}
+
+hr {
+    height: 1px;
+    margin: 30px 0;
+    border: 0;
+    border-bottom: solid 1px #eee;
+}
+
+.mceContentBody blockquote {
+    background: #888;
+    color: #fff;
+    font: 400 18px/26px 'Coda', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 15px 0 25px 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    clear: both;
+} 
+
+.mceContentBody blockquote:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: rgba(0,0,0, .1) #fff;
+    display: block;
+    width: 0;
+}
+
+.mceContentBody blockquote p { padding-left: 55px; color: #fff; }
+
+.alignright {
+	float: right;
+	margin: 0 0 25px 25px;
+}
+
+.alignleft {
+	float: left;
+	margin: 10px 25px 25px 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	color: #a3aec0;
+}
+
+.round {
+	-webkit-border-radius: 500px; 
+	-moz-border-radius: 500x; 
+	border-radius: 500px;
+}
+
+.contact-details {
+    position: relative;
+    background: #888;
+    padding: 15px 15px 20px 15px;
+    margin: 0 0 25px 0;
+    color: #fff;
+    width: 91%;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+
+.contact-details:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: rgba(0,0,0, .1) #fff;
+    display: block;
+    width: 0;
+}
+
+.contact-details a {
+	color: #fff;
+}

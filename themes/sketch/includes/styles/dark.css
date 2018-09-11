@@ -1,0 +1,273 @@
+/* Dark Styles */
+
+body {
+	color: #909EA4;
+}
+
+h1, h2, h3, h4, h5, h6, .blog-title a {
+	color: #DDE6E9;
+}
+
+p a {
+	color: #fff !important;
+}
+
+::selection {
+    background: #6F7279;
+    color: #909EA4;
+}
+
+::-moz-selection {
+    background: #6F7279;
+    color: #909EA4;
+}
+
+#overlay {
+    background: url(../../images/loading2.gif) center 100px no-repeat #2f353e;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 110;
+    position: absolute;
+}
+
+.highlight {
+	background: #2E323C;
+}
+
+hr {
+	border-bottom: solid 1px #484F5E;
+}
+
+#header {
+	box-shadow: rgba(0,0,0, 0.4) 0px 0px 7px;
+	-moz-box-shadow: rgba(0,0,0, 0.4) 0px 0px 7px;
+	-webkit-box-shadow: rgba(0,0,0, 0.4) 0px 0px 7px;
+}
+
+#header, #footer {
+	background: #2f353e;
+}
+
+.section-wrap {
+	background: #3C434D;
+	border-top: solid 1px #3a424d;
+}
+
+.section-title h3 {
+	color: #909EA4;
+}
+
+.about-right::before, .modal blockquote::before, .contact-details:before {
+	border-color:rgba(0,0,0, .1) #3C434D;
+}
+
+#portfolio, #social {
+	background: #2f353e;
+}
+
+.project-box {
+	background: #292D36;
+}
+
+.project-box h3 a {
+	color: #eee;
+}
+
+.text-fade {
+    -moz-box-shadow: inset 0 -15px 35px -8px #292D36;
+    -webkit-box-shadow: inset 0 -15px 35px -8px #292D36;
+    box-shadow: inset 0 -15px 35px -8px #292D36;
+}
+
+.filter-menu, .filter-list li ul {
+	background: #292D36;
+	color: #909EA4;
+	border: solid 1px #3E424B;
+}
+
+.filter-list li a {
+	color: #909EA4;
+}
+
+.filter-list li ul li {
+	border-bottom: solid 1px #363941;
+}
+
+#modals-wrap {
+	background: #3C434D;
+}
+
+.modal .flex-control-nav {
+	background: #31343C !important;
+}
+
+.social-block .widget {
+	background: #292D36;
+	border: solid 1px transparent;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.social-block .dribbble-title, .social-block .twitter-title, .social-block .flickr-title, .social-block .widgettitle {
+	margin: -21px -21px 25px -21px;
+}
+
+.social-block .widget h2 {
+	background: #242931;
+	border-bottom: dashed 1px #33373e;
+}
+
+.flex-control-paging li a {
+	background: #616674 !important;
+}
+
+.social-block .widget a {
+	color: #fff;
+}
+
+.slide-controls a:hover {
+	color: #fff;
+}
+
+.video-wrap {
+	background: #31343C;
+}
+
+.intro {
+	border-bottom: solid 1px #484F5E;
+}
+
+.posts-list ul li {
+	border-bottom: solid 1px #484F5E;
+}
+
+.meta-nav {
+	background: #30353F;
+}
+
+.meta-nav a {
+	color: #9FAFB6;
+}
+
+.meta-nav a:hover {
+	background: #272B35;
+	color: #fff;
+}
+
+.meta-nav .modal-previous {
+	border-right: solid 1px #282B33
+}
+
+.meta-nav .modal-next {
+	border-left: solid 1px #3A3D49;
+}
+
+.modal-left .post-title, .modal-meta h3 {
+	border-bottom: solid 3px #484F5E;
+}
+
+.modal-meta-links li {
+	border-bottom: solid 1px #484F5E;
+}
+
+.modal-meta-links .entypo {
+	color: #B6C8CF;
+}
+
+.modal-meta-links li {
+	color: #909EA4;
+}
+
+#respond input[type="text"], #respond textarea, .thread-even .children #respond input[type="text"] {
+	background: #272B35;
+	border: none;
+	color: #909EA4;
+}
+
+#respond input[type="text"]:focus, #respond textarea:focus {
+	outline: none;
+	border: none;
+}
+
+.comments-title {
+	background: #30353F;
+}
+
+.comments-title:before {
+	color: #454D58;
+}
+
+.commentlist > li.thread-odd {
+	background: #30353F;
+}
+
+.commentlist .children li {
+	border-left: solid 1px #373B42;
+}
+
+.comment-time {
+	color: #787B81;
+}
+
+.comment-edit-link {
+	color: #fff;
+}
+
+.reply a {
+	color: #909EA4;
+}
+
+.reply a:after {
+	color: #909EA4;
+}
+
+.reply a:hover {
+	color: #fff;
+}
+
+.fn a {
+	color: #909EA4;
+}
+
+#respond, .contact-details {
+	background: #30353F;
+}
+
+.blog-ribbon {
+}
+
+.more-link {
+	color: #DDE6E9;
+}
+
+.gallery-item img {
+    background: #323741;
+}
+
+.wpcf7 {
+	background: #30353F;
+}
+
+.wpcf7:before {
+    border-color: rgba(0,0,0, .3) #3C434D;
+}
+
+.wpcf7 textarea, .wpcf7 input[type="text"] {
+	background: #272B35 !important;
+	border: none;
+	color: #909EA4;
+}
+
+.wpcf7 textarea:focus {
+	border: none;
+}
+
+.wpcf7 p {
+	color: #909EA4;
+}
+
+.chirp li {
+	border-bottom: solid 1px #30343F !important;
+}

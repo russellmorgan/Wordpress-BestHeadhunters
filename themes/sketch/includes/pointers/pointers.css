@@ -1,0 +1,43 @@
+.wp-pointer {
+	z-index: 99 !important;
+}
+
+.wp-pointer-content h3 {
+	background: #777;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#6d6d6d),to(#808080));
+	background-image: -webkit-linear-gradient(bottom, #6d6d6d, #808080);
+	background-image: -moz-linear-gradient(bottom, #6d6d6d, #808080);
+	background-image: -o-linear-gradient(bottom, #6d6d6d, #808080);
+	background-image: linear-gradient(to top, #6d6d6d, #808080);
+}
+
+.wp-pointer-content a {
+	text-decoration: none;
+}
+
+.wp-pointer-content {
+	margin: 0;
+	padding: 0;
+	border-top: none;
+}
+
+.wp-pointer-content ul {
+	margin-bottom: 0;
+}
+
+.wp-pointer-content li {
+	list-style-type: none;
+	padding: 0 0 12px 0;
+	margin: 0 25px 12px 25px;
+	border-bottom: solid 1px #eee;
+}
+
+.wp-pointer-content li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.wp-pointer-buttons {
+	margin-bottom: 10px;
+}

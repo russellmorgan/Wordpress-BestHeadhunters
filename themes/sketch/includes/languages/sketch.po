@@ -1,0 +1,249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sketch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-09 10:38-0800\n"
+"PO-Revision-Date: 2012-09-09 10:38-0800\n"
+"Last-Translator: \n"
+"Language-Team: Okay Themes\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../comments.php:16
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../../comments.php:38
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../../comments.php:38
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../../comments.php:45
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../../comments.php:53
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr ""
+
+#: ../../comments.php:53
+msgid "Log out of this account"
+msgstr ""
+
+#: ../../comments.php:53
+msgid "Log out &raquo;"
+msgstr ""
+
+#: ../../comments.php:60
+msgid "Name"
+msgstr ""
+
+#: ../../comments.php:65
+msgid "Email"
+msgstr ""
+
+#: ../../comments.php:70
+msgid "Website"
+msgstr ""
+
+#: ../../comments.php:78
+#, php-format
+msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+msgstr ""
+
+#: ../../comments.php:80
+msgid "Submit Comment"
+msgstr ""
+
+#: ../../functions.php:120
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../../functions.php:127
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../../functions.php:127
+msgid "(Edit)"
+msgstr ""
+
+#: ../../functions.php:138
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../functions.php:224
+msgid ""
+"The Options Framework plugin is required for this theme to function properly."
+msgstr ""
+
+#: ../../functions.php:224
+msgid "Install now"
+msgstr ""
+
+#: ../../functions.php:268
+msgid "Getting Started With"
+msgstr ""
+
+#: ../../functions.php:270
+msgid ""
+"To get started with your shiny new theme, please watch the install video "
+"below."
+msgstr ""
+
+#: ../../functions.php:274
+msgid ""
+"Use the links below to access theme documentation and the  support forum."
+msgstr ""
+
+#: ../../functions.php:277
+msgid "Sketch Help Document"
+msgstr ""
+
+#: ../../functions.php:278
+msgid "Okay Themes Support Forum"
+msgstr ""
+
+#: ../../functions.php:279
+msgid "Customize This Theme"
+msgstr ""
+
+#: ../../index.php:91
+msgid "Sort Portfolio"
+msgstr ""
+
+#: ../../index.php:93
+msgid "All Projects"
+msgstr ""
+
+#: ../../index.php:212
+msgid "No Comments"
+msgstr ""
+
+#: ../../index.php:212
+msgid "1 Comment"
+msgstr ""
+
+#: ../../index.php:212
+msgid "% Comments"
+msgstr ""
+
+#: ../../modal.php:96
+msgid "Next Post"
+msgstr ""
+
+#: ../../modal.php:97
+msgid "Previous Post"
+msgstr ""
+
+#: ../../modal.php:106
+msgid "Author"
+msgstr ""
+
+#: ../../modal.php:107
+msgid "Date"
+msgstr ""
+
+#: ../../modal.php:110
+msgid "Category"
+msgstr ""
+
+#: ../../modal.php:121
+msgid "Tag"
+msgstr ""
+
+#: ../../options.php:51
+msgid "Accent Color"
+msgstr ""
+
+#: ../../options.php:52
+msgid ""
+"Select the color you would like your links, buttons, and accent color to be. "
+"The demo site uses #22AAE3."
+msgstr ""
+
+#: ../../options.php:277
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../options.php:278
+msgid ""
+"If you would like to make styling modifications, you can do that here. Doing "
+"it here will prevent your modifications from being overwritten if/when you "
+"update the theme."
+msgstr ""
+
+#: ../../options.php:298
+msgid "Sketch Styling"
+msgstr ""
+
+#: ../../options.php:342
+msgid "Sketch Header"
+msgstr ""
+
+#: ../../includes/widgets/dribbble.php:17
+msgid "Grab your latest Dribbble shots"
+msgstr ""
+
+#: ../../includes/widgets/dribbble.php:19
+msgid "Okay Dribbble Widget"
+msgstr ""
+
+#: ../../includes/widgets/dribbble.php:90
+#: ../../includes/widgets/flickr.php:102 ../../includes/widgets/twitter.php:70
+msgid "Title:"
+msgstr ""
+
+#: ../../includes/widgets/dribbble.php:96
+#: ../../includes/widgets/twitter.php:76
+msgid "Username:"
+msgstr ""
+
+#: ../../includes/widgets/dribbble.php:102
+msgid "Number of Shots:"
+msgstr ""
+
+#: ../../includes/widgets/flickr.php:16
+msgid "Pull your latest Flickr photos"
+msgstr ""
+
+#: ../../includes/widgets/flickr.php:18
+msgid "Okay Flickr Widget"
+msgstr ""
+
+#: ../../includes/widgets/flickr.php:81
+msgid "More Photos &rarr;"
+msgstr ""
+
+#: ../../includes/widgets/flickr.php:107
+msgid "Your Flickr User ID:"
+msgstr ""
+
+#: ../../includes/widgets/flickr.php:113
+msgid "No. of Photos:"
+msgstr ""
+
+#: ../../includes/widgets/twitter.php:17
+msgid "Grab your latest tweets"
+msgstr ""
+
+#: ../../includes/widgets/twitter.php:19
+msgid "Okay Twitter Widget"
+msgstr ""
+
+#: ../../includes/widgets/twitter.php:82
+msgid "Tweet count:"
+msgstr ""

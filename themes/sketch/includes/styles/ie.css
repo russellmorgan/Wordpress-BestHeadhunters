@@ -1,0 +1,19 @@
+.modal-next-button, .modal-previous-button {
+	right: 0 !important;
+}
+
+.project-box-image img {
+	height: 171px\9; 
+}
+
+.about-right:before, .modal blockquote:before {
+    border-color: #ccc #fff\9 !important;
+}
+
+.wpcf7:before {
+    border-color: #ddd #fff\9 !important;
+}
+
+.post {
+	width: 30%;
+}
