@@ -27,41 +27,30 @@
       <div class="container">
         <div class="row"><div class="col"><h2>Our Jobs</h2></div></div>
         <div class="row mt-3">
+    
+        <?php 
+        $homepage_jobs = new WP_Query(array(
+          'posts_per_page' => 3,
+          'post_type' => 'job',
+          'order' => 'ASC'
+        ));
 
+        while($homepage_jobs->have_posts()) {
+          $homepage_jobs->the_post(); ?>
 
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                <?php the_excerpt(); ?>
+              </div>
+            </div>
+          </div>
+        
+        <?php
+        }
+        ?>
 
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

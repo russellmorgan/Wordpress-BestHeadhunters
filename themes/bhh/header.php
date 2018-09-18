@@ -15,17 +15,10 @@
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Best headhunters</a>
       <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Jobs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  href="#">Blog</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>      
+      <?php 
+      wp_nav_menu(array(
+        'theme_location' => 'headerLocation'
+      ));
+      ?>    
     </ul>
     </nav>

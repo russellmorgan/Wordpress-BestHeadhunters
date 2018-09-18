@@ -4,6 +4,9 @@ function job_post_types() {
     register_post_type('job', array(
       'public' => true,
       'menu_icon' => 'dashicons-calendar',
+      'show_in_nav_menus' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'editor', 'excerpt'),
       'labels' => array(
         'name' => 'Jobs',
         'add_new_item' => 'Add a new job opening',
