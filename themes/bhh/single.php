@@ -33,7 +33,6 @@
         <?php }
         wp_reset_postdata();
         ?>
-        <li class="list-group-item"><a href="<?php echo site_url('/archive'); ?>"><strong>All Posts</strong></a></li>
       </ul>
     </div>
   </div>
