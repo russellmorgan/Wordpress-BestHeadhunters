@@ -2,6 +2,7 @@
 
 function job_post_types() {
     register_post_type('job', array(
+      'rewrite' => array('slug' => 'jobs'),
       'public' => true,
       'menu_icon' => 'dashicons-calendar',
       'show_in_nav_menus' => true,

@@ -4,7 +4,7 @@
     the_post(); 
 ?>
 
-<div class="container py-5 flex-grow-1">
+<div class="container py-5 flex-fill">
   <div class="row">
     <div class="col-lg-8">
       <h3><?php the_title(); ?></h3>

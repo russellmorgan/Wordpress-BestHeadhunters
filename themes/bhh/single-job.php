@@ -5,7 +5,7 @@
 
 <div class="container py-5">
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-7 mb-4">
     <h3 class="mb-4"><?php the_title(); ?></h3>
     <p><strong>
     <?php 
@@ -34,6 +34,36 @@
     </div>
   </div>
 </div>
+
+<!-- google job search data -->
+<script type="application/ld+json"> {
+  "@context" : "http://schema.org/",
+  "@type" : "JobPosting",
+  "title" : "<?php the_title(); ?>",
+  "description" : "<?php the_content(); ?>",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Best Headhunters",
+    "value": "<?php the_id(); ?>"
+  },
+  "datePosted" : "<?php the_time('Y-m-d'); ?>",
+  "hiringOrganization" : {
+    "@type" : "Organization",
+    "name" : "Best Headhunters",
+    "sameAs" : "https://www.bestheadhunters.com"
+  },
+  "jobLocation" : {
+    "@type" : "Place",
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressLocality" : "<?php echo $job_city ?>",
+      "addressRegion" : "<?php echo $job_state ?>",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+
 
   <?php } 
   get_footer();

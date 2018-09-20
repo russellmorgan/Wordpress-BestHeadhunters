@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-          <h1 class="text-white bg-primary p-2">Best Headhunters</h1>
-          <p class="lead text-light bg-secondary p-2">Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market.</p>
+          <h1 class="text-white bg-primary p-2 display-4" style="margin:0">Best Headhunters</h1>
+          <p class="text-light bg-dark p-3">Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market.</p>
           </div>
         </div>
       </div>
@@ -14,10 +14,15 @@
     <!-- intro section -->
     <section class="container mb-5">
         <div class="row">
-          <div class="col-lg-2"><img class="rounded-circle" src="<?php echo get_theme_file_uri('images/headshot.png') ?>"></div>
+          <div class="col-lg-2 mt-2"><img class="rounded-circle" src="<?php echo get_theme_file_uri('images/headshot.png') ?>"></div>
           <div class="col-lg-6"><h2>About Best Headhunters</h2>
-          <P>Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market. Our Executive Recruiters are skilled in the assessment of the executive employment market and provide you with the most qualified candidates for your difficult-to-fill positions. Best Headhunters recruiters will conduct your executive search locally or nationwide. Our headhunters perform executive searches as well as mid-level management searches in all industries on a contingency fee basis.</p>
-<p>Please be advised that Best Headhunters recruiters do not conduct job searches for job seekers. We work for the Employer who pays all costs involved. If you see a position for which you are qualified, you may submit your resume to Best Headhunters for that position enabling our clients to contact you directly.</p>
+          <?php 
+            $homepage_about = new WP_Query( 'pagename=about' );
+            while ( $homepage_about->have_posts() ) : $homepage_about->the_post();
+                the_content();
+            endwhile;
+            wp_reset_postdata();
+          ?>
           </div>
           <div class="col-lg-4">
             <div class="card">
@@ -34,30 +39,30 @@
       <div class="container">
         <div class="row"><div class="col"><h2>Featured Jobs</h2></div></div>
         <div class="row mt-3">
-    
-        <?php 
-        $homepage_jobs = new WP_Query(array(
-          'posts_per_page' => 3,
-          'post_type' => 'job',
-          'order' => 'ASC'
-        ));
+          <div class="card-deck">
+      
+          <?php 
+          $homepage_jobs = new WP_Query(array(
+            'posts_per_page' => 3,
+            'post_type' => 'job'
+          ));
 
-        while($homepage_jobs->have_posts()) {
-          $homepage_jobs->the_post(); ?>
+          while($homepage_jobs->have_posts()) {
+            $homepage_jobs->the_post(); ?>
 
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <h4><a class="primary-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                <?php the_excerpt(); ?>
+            <div class="col-lg-4 mb-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5><a class="primary-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                  <?php the_excerpt(); ?>
+                </div>
               </div>
             </div>
+          
+          <?php
+          }
+          ?>
           </div>
-        
-        <?php
-        }
-        ?>
-
         </div>
       </div>
     </section>

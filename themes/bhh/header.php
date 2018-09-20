@@ -14,19 +14,21 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow|Russo+One" rel="stylesheet">
 
     <?php wp_head(); ?>
-    <title>Best HeadHunters</title>
-  </head>
+    </head>
     <body <?php body_class() ?>>
 
-    <div class="d-flex flex-column">
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-      <a class="navbar-brand mr-5" href="<?php echo site_url(); ?>">Best headhunters</a>
-
+    <div class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-shrink-0">
+      <a class="navbar-brand mr-5" href="<?php echo site_url(); ?>">Best Headhunters</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
       <?php 
       wp_nav_menu(array(
         'theme_location' => 'headerLocation',
-        'menu_class' => 'navbar-nav'
+        'menu_class' => 'navbar-nav mr-auto'
       ));
       ?>    
-
+      </div>
     </nav>
