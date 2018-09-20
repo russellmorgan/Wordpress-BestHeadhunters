@@ -37,7 +37,7 @@ nav .menu-item a, footer .menu-item a {
   background-position: center center;
   background-size: cover;
   background-color: #f6c127;
-  min-height: 525px;
+  min-height: 510px;
 }
 
 .bg-primary {
@@ -46,4 +46,12 @@ nav .menu-item a, footer .menu-item a {
 
 .navbar-brand {
   font-family: 'Russo One', sans-serif;
+}
+
+
+/* Reduce jumbotron for mobile */
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    min-height: 300px;
+  }
 }

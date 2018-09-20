@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-          <h1 class="text-white bg-primary p-2 display-4" style="margin:0">Best Headhunters</h1>
+          <h1 class="text-white bg-primary p-2 display-5" style="margin:0">Best Headhunters</h1>
           <p class="text-light bg-dark p-3">Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market.</p>
           </div>
         </div>
