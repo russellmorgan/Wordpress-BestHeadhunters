@@ -63,8 +63,8 @@
             <?php } ?>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><a href="<?php echo site_url(); ?>/jobs"><h5>View all jobs</h5></a></div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-sm-3 text-center"><a href="<?php echo site_url(); ?>/jobs"><h5>View all jobs</h5></a></div>
         </div>
       </div>
     </section>

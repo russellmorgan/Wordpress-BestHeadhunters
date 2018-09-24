@@ -52,6 +52,9 @@ nav .menu-item a, footer .menu-item a {
 /* Reduce jumbotron for mobile */
 @media only screen and (max-width: 480px) {
   .jumbotron {
-    min-height: 300px;
+    min-height: 450px;
+    background-size: auto 230px;
+    background-position: center top;
+    justify-content: flex-end !important;
   }
 }

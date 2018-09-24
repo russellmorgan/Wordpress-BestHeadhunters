@@ -7,7 +7,7 @@
         the_post(); ?>
       <section class="pb-2">
           <h5><?php the_title(''); ?></h5>
-          <small><?php the_time('F.j.Y'); ?></small>
+          <small class="d-none"><?php the_time('F.j.Y'); ?></small>
           <p> <?php the_excerpt() ?></p>
           <p><a href="<?php the_permalink();?>">Read more</a></p>
       </section>
