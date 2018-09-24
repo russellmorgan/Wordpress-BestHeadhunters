@@ -37,32 +37,34 @@
     <!-- featured jobs -->
     <section class="container-fluid bg-light mb-5 py-5">
       <div class="container">
-        <div class="row"><div class="col"><h2>Featured Jobs</h2></div></div>
+        <div class="row">
+          <div class="col"><h2>Featured Jobs</h2></div>
+        </div>
         <div class="row mt-3">
           <div class="card-deck">
-      
-          <?php 
-          $homepage_jobs = new WP_Query(array(
-            'posts_per_page' => 3,
-            'post_type' => 'job'
-          ));
+            <?php 
+            $homepage_jobs = new WP_Query(array(
+              'posts_per_page' => 3,
+              'post_type' => 'job'
+            ));
 
-          while($homepage_jobs->have_posts()) {
-            $homepage_jobs->the_post(); ?>
+            while($homepage_jobs->have_posts()) {
+              $homepage_jobs->the_post(); ?>
 
-            <div class="col-lg-4 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5><a class="primary-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                  <?php the_excerpt(); ?>
+              <div class="col-lg-4 mb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h5><a class="primary-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <?php the_excerpt(); ?>
+                  </div>
                 </div>
               </div>
-            </div>
-          
-          <?php
-          }
-          ?>
+            
+            <?php } ?>
           </div>
+        </div>
+        <div class="row">
+          <div class="col"><a href="<?php echo site_url(); ?>/jobs"><h5>View all jobs</h5></a></div>
         </div>
       </div>
     </section>
