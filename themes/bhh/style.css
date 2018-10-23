@@ -57,4 +57,9 @@ nav .menu-item a, footer .menu-item a {
     background-position: center top;
     justify-content: flex-end !important;
   }
+
+  #menu-footer-menu {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }

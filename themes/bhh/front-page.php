@@ -14,7 +14,7 @@
     <!-- intro section -->
     <section class="container mb-5">
         <div class="row">
-          <div class="col-lg-2 mt-2"><img class="rounded-circle" src="<?php echo get_theme_file_uri('images/headshot.png') ?>"></div>
+          <div class="col-lg-2 mt-2"><img class="rounded img-fluid" src="<?php echo get_theme_file_uri('images/headshot.jpg') ?>"></div>
           <div class="col-lg-6"><h2>About Best Headhunters</h2>
           <?php 
             $homepage_about = new WP_Query( 'pagename=about' );
