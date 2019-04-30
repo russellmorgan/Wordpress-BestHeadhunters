@@ -5,7 +5,7 @@
           <strong>BestHeadhunters</strong><br>
           <small class="text-white-50">We help you find the stars!</small>
         </div>
-        <div class="col-md col-sm offset-sm-1 offset-md-1">
+        <div class="col-md offset-md-1">
         <?php 
           wp_nav_menu(array(
             'theme_location' => 'footerLocation',
