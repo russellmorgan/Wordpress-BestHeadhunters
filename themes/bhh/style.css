@@ -11,11 +11,55 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+body {
+  height: 100vh;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Russo One', sans-serif;
+}
+
+nav .menu-item a, footer .menu-item a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+#menu-footer-menu {
+  flex-direction: row;
+}
+
+/* bootstrap overrides */
+
 .jumbotron {
   background-image: url(images/reach-for-stars.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  background-color: red;
-  min-height: 525px;
+  background-size: cover;
+  background-color: #f6c127;
+  min-height: 510px;
+}
+
+.bg-primary {
+  background-color: #22AAE3 !important;
+}
+
+.navbar-brand {
+  font-family: 'Russo One', sans-serif;
+}
+
+
+/* Reduce jumbotron for mobile */
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    min-height: 450px;
+    background-size: auto 230px;
+    background-position: center top;
+    justify-content: flex-end !important;
+  }
+
+  #menu-footer-menu {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }

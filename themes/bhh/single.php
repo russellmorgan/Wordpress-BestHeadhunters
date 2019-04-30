@@ -11,9 +11,9 @@
     </div>
     <div class="col-lg-4 offset-lg-1">
       <!-- if job post show meta about the job -->
-      <div class="card mb-5">
+      <div class="card mb-5 d-none">
         <div class="card-body">
-        Posted on: <?php the_time('n.j.y'); ?><br />
+        Posted on: <?php the_time('F.j.Y'); ?><br />
         Category: <?php echo get_the_category_list(','); ?>
         </div>
       </div>
@@ -33,7 +33,6 @@
         <?php }
         wp_reset_postdata();
         ?>
-        <li class="list-group-item"><a href="<?php echo site_url('/archive'); ?>"><strong>All Posts</strong></a></li>
       </ul>
     </div>
   </div>

@@ -4,28 +4,33 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="3YT44k3SLzfEG9w6wS8FKnDyPKm_MNOWr3vGxm_ZzJw" />
+    <meta name="msvalidate.01" content="965D1CC8014D72BC0925DA5D3D1D5614" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <?php wp_head(); ?>
-    <title>Best HeadHunters</title>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Russo+One" rel="stylesheet">
+
+    <?php wp_head(); ?>
+    </head>
     <body <?php body_class() ?>>
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Best headhunters</a>
-      <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Jobs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  href="#">Blog</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>      
-    </ul>
+
+    <div class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-shrink-0">
+      <a class="navbar-brand mr-5" href="<?php echo site_url(); ?>">Best Headhunters</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+      <?php 
+      wp_nav_menu(array(
+        'theme_location' => 'headerLocation',
+        'menu_class' => 'navbar-nav mr-auto'
+      ));
+      ?>    
+      </div>
     </nav>

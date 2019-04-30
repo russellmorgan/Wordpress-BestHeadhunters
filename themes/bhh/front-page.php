@@ -1,21 +1,33 @@
 <?php get_header(); ?>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center">
       <div class="container">
-        <h1 class="display-4 text-light">Best Headhunters</h1>
-        <p class="lead">Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market.</p>
+        <div class="row">
+          <div class="col-lg-6">
+          <h1 class="text-white bg-primary p-2 display-5" style="margin:0">Best Headhunters</h1>
+          <p class="text-light bg-dark p-3">Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive star talent in the market.</p>
+          </div>
+        </div>
       </div>
     </div>   
 
     <!-- intro section -->
     <section class="container mb-5">
         <div class="row">
-          <div class="col-lg-3"><img src="<?php echo get_theme_file_uri('images/headshot.png') ?>"></div>
-          <div class="col-lg-6"><h2>About Best Headhunters</h2><p>Lorem ipsum</p></div>
-          <div class="col-lg-3">
+          <div class="col-lg-2 mt-2"><img class="rounded img-fluid" src="<?php echo get_theme_file_uri('images/headshot.jpg') ?>"></div>
+          <div class="col-lg-6"><h2>About Best Headhunters</h2>
+          <?php 
+            $homepage_about = new WP_Query( 'pagename=about' );
+            while ( $homepage_about->have_posts() ) : $homepage_about->the_post();
+                the_content();
+            endwhile;
+            wp_reset_postdata();
+          ?>
+          </div>
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-body border-primary bg-primary text-light">
-              Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive talent in all industries.
+              <div class="card-body border-primary bg-primary text-white">
+              <strong>Best Headhunters, a nationwide professional Executive Search Firm, helps organizations recruit the best executive talent in all industries.</strong>
               </div>
             </div>
           </div>
@@ -25,40 +37,34 @@
     <!-- featured jobs -->
     <section class="container-fluid bg-light mb-5 py-5">
       <div class="container">
-        <div class="row"><div class="col"><h2>Featured Jobs</h2></div></div>
         <div class="row">
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
+          <div class="col"><h2>Featured Jobs</h2></div>
+        </div>
+        <div class="row mt-3">
+          <div class="card-deck">
+            <?php 
+            $homepage_jobs = new WP_Query(array(
+              'posts_per_page' => 3,
+              'post_type' => 'job'
+            ));
+
+            while($homepage_jobs->have_posts()) {
+              $homepage_jobs->the_post(); ?>
+
+              <div class="col-lg-4 mb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h5><a class="primary-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <?php the_excerpt(); ?>
+                  </div>
+                </div>
               </div>
-            </div>
+            
+            <?php } ?>
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <h4>Featured job title</h4>
-                Job content but short version...
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-sm-3 text-center"><a href="<?php echo site_url(); ?>/jobs"><h5>View all jobs</h5></a></div>
         </div>
       </div>
     </section>
@@ -67,11 +73,24 @@
     <section class="container mb-5">
       <div class="row"><div class="col"><h2>From the blog</h2></div></div>
       <div class="row">
+      <?php 
+        $featured_post = new WP_Query(array(
+          'posts_per_page' => 1
+        ));
+
+        while ($featured_post->have_posts()) {
+          $featured_post->the_post(); ?>
+
         <div class="col-lg-6">
-          <h4>Now is the Time to Hire Excellent Candidates</h4>
-          <p>If your company is in the process of laying off people, now is the time to also think of hiring excellent candidates. For every group of people your company lays off a new highly regarded job should be created when talent is available. Wait and you will regret it!</p>
-          <p><a href="#">More from our blog</a></p>
+          <h4><?php the_title(); ?></h4>
+          <p><?php the_excerpt(); ?></p>
+          <p><a href="<?php the_permalink();?>">Read More</a></p>
         </div>
+
+        <?php }
+        wp_reset_postdata();
+        ?>
+
       </div>
     </section>
     
