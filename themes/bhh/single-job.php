@@ -11,6 +11,8 @@
     <?php 
       $job_city = get_field('city_location');
       $job_state = get_field('state_location');
+      $min_salary = get_field('min_salary');
+      $max_salary = get_field('max_salary');
       echo $job_city .', '. $job_state
     ?>
     </strong></p>
@@ -59,6 +61,16 @@
       "addressLocality" : "<?php echo $job_city ?>",
       "addressRegion" : "<?php echo $job_state ?>",
       "addressCountry": "US"
+    }
+  },
+  "baseSalary": {
+  "@type": "MonetaryAmount",
+  "currency": "USD",
+  "value": {
+    "@type": "QuantitativeValue",
+    "minValue": <?php echo $min_salary ?>,
+    "maxValue": <?php echo $max_salary ?>,
+    "unitText": "YEAR"
     }
   }
 }
