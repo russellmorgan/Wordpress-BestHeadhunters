@@ -13,6 +13,7 @@
       $job_state = get_field('state_location');
       $min_salary = get_field('min_salary');
       $max_salary = get_field('max_salary');
+      $content = get_the_content();
       echo $job_city .', '. $job_state
     ?>
     </strong></p>
@@ -42,7 +43,7 @@
   "@context" : "http://schema.org/",
   "@type" : "JobPosting",
   "title" : "<?php the_title(); ?>",
-  "description" : "<?php the_content(); ?>",
+  "description" : "<?php echo wp_filter_nohtml_kses( $content ); ?>",
   "identifier": {
     "@type": "PropertyValue",
     "name": "Best Headhunters",
@@ -68,8 +69,8 @@
   "currency": "USD",
   "value": {
     "@type": "QuantitativeValue",
-    "minValue": <?php echo $min_salary ?>,
-    "maxValue": <?php echo $max_salary ?>,
+    "minValue": "<?php echo $min_salary ?>",
+    "maxValue": "<?php echo $max_salary ?>",
     "unitText": "YEAR"
     }
   }
