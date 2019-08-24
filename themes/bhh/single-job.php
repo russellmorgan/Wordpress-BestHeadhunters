@@ -13,7 +13,11 @@
       $job_state = get_field('state_location');
       $min_salary = get_field('min_salary');
       $max_salary = get_field('max_salary');
+      $street_address = get_field('street_address');
+      $postal_code = get_field('postal_code');
+      $job_type = get_field('job_type');
       $content = get_the_content();
+      $job_expiration = get_field('job_expiration');
       echo $job_city .', '. $job_state
     ?>
     </strong></p>
@@ -50,6 +54,8 @@
     "value": "<?php the_id(); ?>"
   },
   "datePosted" : "<?php the_time('Y-m-d'); ?>",
+  "validThrough" : "<?php echo job_expiration ?>",
+  "employmentType" : "<?php echo job_type ?>",
   "hiringOrganization" : {
     "@type" : "Organization",
     "name" : "Best Headhunters",
@@ -59,8 +65,10 @@
     "@type" : "Place",
     "address" : {
       "@type" : "PostalAddress",
+      "streetAddress": "<?php echo $street_address ?>",
       "addressLocality" : "<?php echo $job_city ?>",
       "addressRegion" : "<?php echo $job_state ?>",
+      "postalCode": "<?php echo postal_code ?>",
       "addressCountry": "US"
     }
   },
